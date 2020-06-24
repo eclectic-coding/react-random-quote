@@ -1,22 +1,23 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 
 function App() {
   const [isLoading, setIsLoading] = React.useState(true)
   const [error, setError] = React.useState(false)
-  const [data, setData] = React.useState({ quote: []})
+  const [data, setData] = React.useState({ quote: [] })
 
   async function fetchData() {
-    const response = await fetch('https://quote-garden.herokuapp.com/api/v2/quotes/random')
+    const response = await fetch(
+      'https://quote-garden.herokuapp.com/api/v2/quotes/random'
+    )
     response
       .json()
       .then((response) => {
-          setData(response)
+        setData(response)
         setIsLoading(true)
         setError(false)
       })
       .catch(() => {
-          setIsLoading(false)
+        setIsLoading(false)
         setError(true)
       })
   }
@@ -48,25 +49,25 @@ function App() {
                   Date().getFullYear()))
                 </script>
                 Created by Chuck Smith -{' '}
-                <a href="" target="_blank">
+                <a href="https://www.eclecticsaddlebag.com/" target="_blank" rel="noopener noreferrer">
                   Blog
                 </a>{' '}
                 -{' '}
-                <a href="" target="_blank">
+                <a href="https://chucksmith.dev/" target="_blank" rel="noopener noreferrer">
                   Portfolio
                 </a>
               </div>
             </div>
             <div className="credits__social">
-              <a href="https://twitter.com/EclecticCoding" target="_blank">
+              <a href="https://twitter.com/EclecticCoding" target="_blank"  rel="noopener noreferrer">
                 Twitter
               </a>{' '}
               |{' '}
-              <a href="https://www.linkedin.com/in/dev-chuck-smith/" target="_blank">
+              <a href="https://www.linkedin.com/in/dev-chuck-smith/" target="_blank"  rel="noopener noreferrer">
                 LinkedIn
               </a>{' '}
               |{' '}
-              <a href="https://github.com/eclectic-coding" target="_blank">
+              <a href="https://github.com/eclectic-coding" target="_blank"  rel="noopener noreferrer">
                 GitHub
               </a>
             </div>
@@ -75,7 +76,7 @@ function App() {
         {error && <div>Has error: {error}</div>}
       </div>
     </main>
-  );
+  )
 }
 
-export default App;
+export default App
