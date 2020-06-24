@@ -49,25 +49,45 @@ function App() {
                   Date().getFullYear()))
                 </script>
                 Created by Chuck Smith -{' '}
-                <a href="https://www.eclecticsaddlebag.com/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.eclecticsaddlebag.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Blog
                 </a>{' '}
                 -{' '}
-                <a href="https://chucksmith.dev/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://chucksmith.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Portfolio
                 </a>
               </div>
             </div>
             <div className="credits__social">
-              <a href="https://twitter.com/EclecticCoding" target="_blank"  rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/EclecticCoding"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Twitter
               </a>{' '}
               |{' '}
-              <a href="https://www.linkedin.com/in/dev-chuck-smith/" target="_blank"  rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/dev-chuck-smith/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LinkedIn
               </a>{' '}
               |{' '}
-              <a href="https://github.com/eclectic-coding" target="_blank"  rel="noopener noreferrer">
+              <a
+                href="https://github.com/eclectic-coding"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 GitHub
               </a>
             </div>

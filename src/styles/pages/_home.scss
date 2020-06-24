@@ -12,10 +12,10 @@ body {
 }
 
 main {
-  grid-area: content;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .card {
