@@ -1,0 +1,26 @@
+/**
+ * Basic typography style -- Semantic and elements styles
+ * Classes will be located in other partials
+ */
+@import "../abstracts/variables";
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $text-color;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:hover,
+  &:hover {
+    font-weight: bold;
+  }
+}
