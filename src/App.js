@@ -43,11 +43,7 @@ function App() {
             </div>
             <div>
               <div id="copyright" className="credits">
-                &#169;
-                <script>
-                  document.getElementById('copyright').appendChild(document.createTextNode(new
-                  Date().getFullYear()))
-                </script>
+                &#169; {new Date().getFullYear()}{' '}
                 Created by Chuck Smith -{' '}
                 <a
                   href="https://www.eclecticsaddlebag.com/"
